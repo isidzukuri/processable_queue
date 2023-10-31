@@ -11,7 +11,7 @@ Main idea is to process collection of objects with multiple threads in parallel.
 - queue access is concurent, protected by mutex
 
 Basic usage:
-```
+```ruby
 processor = proc {|item| p item} # it can be any object which respons to #call(arg1)
 items = [1,2,3]
 
@@ -23,7 +23,7 @@ ProcessableQueue.process(processor, items)
 ```
 
 Update queue from process example:
-```
+```ruby
 items = [1,2,3]
 queue = ProcessableQueue::ConcurrentSet.new
 queue.push(items)
