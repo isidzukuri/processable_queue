@@ -12,7 +12,7 @@ Main idea is to process collection of objects with multiple threads in parallel.
 
 Basic usage:
 ```ruby
-processor = proc {|item| p item} # it can be any object which respons to #call(arg1)
+processor = proc {|item| p item} # it can be any object which respond to #call(arg1)
 items = [1,2,3]
 
 ProcessableQueue.process(processor, items)
