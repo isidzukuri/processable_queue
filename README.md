@@ -6,7 +6,7 @@ Main idea is to process collection of objects with multiple threads in parallel.
 
 - it will start new thread for each object in collection (up to the limit, by default 40 threads). When thread copmplete processing item it will pick next from the queue
 - it autoscale number of threads automaticaly
-- it will replece dead thread with helthy one if exception happens
+- it will replece dead thread with healthy one if exception happens
 - thread can add new objects to collection
 - queue access is concurent, protected by mutex
 
